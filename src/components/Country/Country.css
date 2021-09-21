@@ -1,0 +1,11 @@
+.country {
+  background-color: lightgoldenrodyellow;
+  border: 2px solid aquamarine;
+  margin: 10px;
+  padding: px;
+  border-radius: 20px;
+}
+
+.country img{
+  width: 200px;
+}
