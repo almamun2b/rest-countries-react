@@ -7,7 +7,7 @@ const Countries = () => {
     const [countries, setCountries] = useState([]);
 
     useEffect(() => {
-        fetch('https://restcountries.eu/rest/v2/all')
+        fetch('https://restcountries.com/v3.1/all')
             .then(res => res.json())
             .then(data => setCountries(data));
     }, [])
@@ -18,7 +18,7 @@ const Countries = () => {
             <div className='countries'>
                 {
                     countries.map(country => <Country
-                        key={country.name}
+                        key={country.name.common}
                         country={country}
                     // name={country.name}
                     // capital={country.capital}
